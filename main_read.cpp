@@ -1,10 +1,14 @@
 #include <iostream>
 #include <fstream>
+#include <iomanip>
+#include <string>
 using namespace std;
 
 int main()
 {
-	/***************************************************
-	 * Code your program here
-	 ************************************************** */
+	ifstream inputFile (" students.txt");
+
+	if (!inputFile.is_open())
+
+	return 1;
 }
