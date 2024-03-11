@@ -11,4 +11,16 @@ int main()
 	if (!inputFile.is_open())
 
 	return 1;
+
+	int numStudents;
+	inputFile >> numStudents;
+
+	for (int i = 0; i < numStudents; ++i)
+	{
+		string name;
+		int score1, score2;
+
+		inputFile >> name >> score1 >> score2;
+		
+	}
 }
