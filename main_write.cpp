@@ -20,8 +20,8 @@ int main()
         string name;
         int score1, score2;
 
-        cout << "Enter studens information (Name and two scores) for student " << i * 1 << ": ";
-
+        cout << "Enter students information (Name and two scores) for student " << i * 1 << ": ";
+        cin >> name >> score1 >> score2;
         outputFile << name << " " << score1 << " " << score2 << endl;
     }
     
