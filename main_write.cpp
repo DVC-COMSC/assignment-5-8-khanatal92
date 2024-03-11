@@ -4,7 +4,17 @@ using namespace std;
 
 int main()
 {
-   /***************************************************
-    * Code your program here
-    ************************************************** */
+    ofstream outputFile("students.txt");
+
+    if (!outputFile.is_open())
+        return 1;
+    
+    int numStudents;
+    cout << "Enter the number of students: ";
+    cin >> numStudents;
+
+    outputFile << numStudents << endl;
+    {
+        
+    }
 }
