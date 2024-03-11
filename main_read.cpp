@@ -21,6 +21,16 @@ int main()
 		int score1, score2;
 
 		inputFile >> name >> score1 >> score2;
-		
-	}
+
+		int sum = score1 + score2;
+
+		cout << "Student Name: " << setw(10) << left << name;
+		cout << " Score1: " << setw(4) << score1;
+		cout << " Score2: " << setw(4) << score2;
+		cout << " Sum: " << setw(4) << sum;
+		cout << " Avg: " << setw(4) << fixed << setprecision(2) << average << endl;
+}
+	inputFile.close();
+
+	return 0;
 }
