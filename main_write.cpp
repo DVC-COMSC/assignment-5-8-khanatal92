@@ -15,7 +15,7 @@ int main()
 
     outputFile << numStudents << endl;
 
-    for (int i = 0; i < numStudents; ++i)
+    for (int i = 1; i < numStudents; ++i)
     {
         string name;
         int score1, score2;
