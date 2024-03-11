@@ -22,7 +22,7 @@ int main()
 		inputFile >> name >> score1 >> score2;
 
 		int sum = score1 + score2;
-		double average = static_cast<double>(sum);
+		double average = static_cast<double>(sum) / 2;
 
 		cout << "Student Name: " << setw(10) << left << name << endl;
 		cout << " Score1: " << setw(4) << score1 << endl;
