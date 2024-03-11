@@ -15,12 +15,12 @@ int main()
 
     outputFile << numStudents << endl;
 
-    for (int i = 1; i < numStudents; ++i)
+    for (int i = 0; i < numStudents; i++)
     {
         string name;
         int score1, score2;
 
-        cout << "Enter students information (Name and two scores) for student " << i * 1 << ": ";
+        cout << "Enter students information (Name and two scores) for student " << i + 1 << ": ";
         cin >> name >> score1 >> score2;
         outputFile << name << " " << score1 << " " << score2 << endl;
     }
