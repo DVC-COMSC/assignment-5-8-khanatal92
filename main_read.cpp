@@ -9,7 +9,6 @@ int main()
 	ifstream inputFile (" students.txt");
 
 	if (!inputFile.is_open())
-
 	return 1;
 
 	int numStudents;
@@ -23,11 +22,12 @@ int main()
 		inputFile >> name >> score1 >> score2;
 
 		int sum = score1 + score2;
+		double average = static_cast<double>(sum) / 2;
 
-		cout << "Student Name: " << setw(10) << left << name;
-		cout << " Score1: " << setw(4) << score1;
-		cout << " Score2: " << setw(4) << score2;
-		cout << " Sum: " << setw(4) << sum;
+		cout << "Student Name: " << setw(10) << left << name << endl;
+		cout << " Score1: " << setw(4) << score1 << endl;
+		cout << " Score2: " << setw(4) << score2 << endl;
+		cout << " Sum: " << setw(4) << sum << endl;
 		cout << " Avg: " << setw(4) << fixed << setprecision(2) << average << endl;
 }
 	inputFile.close();
